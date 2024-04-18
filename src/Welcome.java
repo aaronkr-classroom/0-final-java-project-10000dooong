@@ -93,8 +93,8 @@ public class Welcome {
 	public static void menuIntro() {
 		System.out.println(" 1. 고객 정보 확인하기 \t5. 장바구니에 항목 추가하기");
 		System.out.println(" 2. 장바구니 상품 목록 보기 \t6. 장바구니의 항목 수량 줄이기");
-		System.out.println(" 3. 장바구니 비우기 \t\t7. 장바구니의 항목 삭제하기");
-		System.out.println(" 4. 영수증 표시하기 \t\t8. 종료");
+		System.out.println(" 3. 장바구니 비우기 \t7. 장바구니의 항목 삭제하기");
+		System.out.println(" 4. 영수증 표시하기 \t8. 종료");
 		System.out.println(" 9. 관리자 로그인");
 		System.out.println("*********************************************");
 	}
@@ -267,7 +267,7 @@ public class Welcome {
 				if (flag) {
 					System.out.println("장바구니의 항목을 삭제하겠습니까? Y | N ");
 					str = input.nextLine();
-					if (str.toUpperCase().equals("y")) {
+					if (str.toUpperCase().equals("Y")) {
 						System.out.println(mCart.mCartItem[numId].getBookID() + "장바구니에서 도서가 삭제되었습니다.");
 						// 배열 이동
 						/* CartItemBook[] cartItem = new CartItemBook[NUM_B00K);
@@ -318,7 +318,7 @@ public class Welcome {
 	}
 	
 	public static void BookList(Book[] booklist) {
-		booklist[0] = new Book("ISEN1234", "쉽게 배우는 JSP 웹 프로그래밍", 27000);
+		booklist[0] = new Book("ISBN1234", "쉽게 배우는 JSP 웹 프로그래밍", 27000);
 		booklist[0].setAuthor("송미영");
 		booklist[0].setDescription("단계별로 쇼핑몰을 구현하며 배우는 JSP 웹 프로그래밍");
 		booklist[0].setCategory("IT전문서");
@@ -330,7 +330,7 @@ public class Welcome {
 		booklist[1].setCategory("IT 전문서");
 		booklist[1].setReleaseDate ("2022/01/22");
 		
-		booklist[2] = new Book("ISEN1236", "스크래치", 22000);
+		booklist[2] = new Book("ISBN1236", "스크래치", 22000);
 		booklist[2].setAuthor("고광일");
 		booklist[2].setDescription("컴퓨팅 사고력을 키우는 블록 코딩");
 		booklist[2].setCategory("컴퓨터입문");

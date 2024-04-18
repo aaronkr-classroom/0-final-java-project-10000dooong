@@ -32,7 +32,7 @@ public class Cart implements CartInterface {
 	
 	public void printCart() {
 		System.out.println("장바구니 상품 목록 :");
-		System.out.println("--------------------------------------");
+		System.out.println("--------------------------------------------------");
 		System.out.println("	도서ID \t|	수량 \t	합계");
 	
 		for (int i = 0; i < mCartCount; i++) {
@@ -41,7 +41,7 @@ public class Cart implements CartInterface {
 			System.out.print("	" + mCartItem[i].getTotalPrice());
 			System.out.println("  ");
 		}
-		System.out.println("----------------------------");
+		System.out.println("--------------------------------------------------");
 	}
 	
 	public boolean isCartInBook(String bookId) {
