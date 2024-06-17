@@ -45,16 +45,4 @@ public class GuestInfoPage extends JPanel {
 		phonePanel.add(phoneField);
 	}
 
-	public static void main(String[] args) {
-		JFrame frame = new JFrame();
-		frame.setBounds(0, 0, 1000, 750);
-		frame.setLayout(null);
-
-		JPanel mPagePanel = new JPanel();
-		mPagePanel.setBounds(0, 150, 1000, 750);
-
-		frame.add(mPagePanel);
-		mPagePanel.add("고객 정보 확인하기", new GuestInfoPage(mPagePanel));
-		frame.setVisible(true);
-	}
 }

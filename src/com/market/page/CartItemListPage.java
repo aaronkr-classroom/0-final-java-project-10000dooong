@@ -182,7 +182,6 @@ public class CartItemListPage extends JPanel {
 			}
 		});
 	}
-
 	public static void main(String[] args) {
 
 		Cart mCart = new Cart();
@@ -197,4 +196,5 @@ public class CartItemListPage extends JPanel {
 		mPagePanel.add("장바구니의 상품 목록 보기", new CartItemListPage(mPagePanel, mCart));
 		frame.setVisible(true);
 	}
+
 }

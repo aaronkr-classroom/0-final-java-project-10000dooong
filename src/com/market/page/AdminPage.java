@@ -158,19 +158,4 @@ public class AdminPage extends JPanel {
 				dateTextField.setText("");
 			}
 		});
-	}
-
-	public static void main(String[] args) {
-
-		JFrame frame = new JFrame();
-		frame.setBounds(0, 0, 1000, 750);
-		frame.setLayout(null);
-
-		JPanel mPagePanel = new JPanel();
-		mPagePanel.setBounds(0, 150, 1000, 750);
-
-		frame.add(mPagePanel);
-		mPagePanel.add("주문하기", new AdminPage(mPagePanel));
-		frame.setVisible(true);
-	}
-}
+	}}

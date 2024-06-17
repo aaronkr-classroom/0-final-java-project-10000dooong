@@ -146,20 +146,4 @@ public class CartOrderBillPage extends JPanel {
 
 	}
 
-	public static void main(String[] args) {
-
-		Cart mCart = new Cart();
-		JFrame frame = new JFrame();
-		frame.setBounds(0, 0, 1000, 750);
-		frame.setLayout(null);
-
-		JPanel mPagePanel = new JPanel();
-		mPagePanel.setBounds(0, 150, 1000, 750);
-
-		frame.add(mPagePanel);
-		BookInIt.init();
-		mPagePanel.add("주문하기", new CartOrderBillPage(mPagePanel, mCart));
-		frame.setVisible(true);
-
-	}
 }

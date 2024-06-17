@@ -17,7 +17,7 @@ public class Person {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
@@ -25,7 +25,7 @@ public class Person {
 	}
 
 	public int getPhone() {
-		return phone;
+		return this.phone;
 	}
 
 	public void setPhone(int phone) {
@@ -33,7 +33,7 @@ public class Person {
 	}
 
 	public String getAddress() {
-		return address;
+		return this.address;
 	}
 
 	public void setAddress(String address) {
